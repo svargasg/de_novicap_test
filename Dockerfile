@@ -1,4 +1,4 @@
-FROM quay.io/astronomer/astro-runtime:9.7.0
+FROM quay.io/astronomer/astro-runtime:9.7.0-python-3.9
 
 USER astro
 WORKDIR "/usr/local/airflow"
