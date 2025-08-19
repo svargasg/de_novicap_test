@@ -3,3 +3,4 @@ astronomer-cosmos==1.5.0
 boto3==1.26.106
 dbt-core==1.8.1
 dbt-redshift==1.8.1
+ydata-profiling==4.16.1
