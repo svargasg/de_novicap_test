@@ -9,25 +9,28 @@ from include.common.params import GlobalParams
 from include.utils.aws import s3_read_csv, s3_upload_file
 from include.utils.utils import generate_profile_report
 
+
 def profile_data(s3_key):
     _params = GlobalParams()
     aws_conn_id = "aws_conn"
     df = s3_read_csv(aws_conn_id, _params.AWS_S3_BUCKET_RAW, s3_key, _params.region)
     tmp_path = generate_profile_report(df)
     s3_report_key = _params.AWS_S3_PROFILING_FOLDER + tmp_path.split("/")[-1]
-    s3_upload_file(aws_conn_id, tmp_path, _params.AWS_S3_BUCKET_RAW, s3_report_key, _params.region, {'ContentType': 'text/html'})
+    s3_upload_file(
+        aws_conn_id, tmp_path, _params.AWS_S3_BUCKET_RAW, s3_report_key, _params.region, {"ContentType": "text/html"}
+    )
 
 
 # -------- dag definition ------------------------
 DAG_NAME = os.path.basename(__file__).replace(".py", "")
 
 default_args = {
-        "owner": "DE",
-        "retries": 1,
-        "retry_delay": timedelta(seconds=30),
-        "execution_timeout": timedelta(minutes=5),
-        # "on_failure_callback": get_slack_conf_failure(),
-    }
+    "owner": "DE",
+    "retries": 1,
+    "retry_delay": timedelta(seconds=30),
+    "execution_timeout": timedelta(minutes=5),
+    # "on_failure_callback": get_slack_conf_failure(),
+}
 
 
 @dag(

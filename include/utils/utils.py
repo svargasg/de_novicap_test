@@ -1,14 +1,13 @@
 import logging
 from datetime import datetime, timezone
-from include.common.params import GlobalParams
+
 from ydata_profiling import ProfileReport
 
+from include.common.params import GlobalParams
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
+
 
 def generate_profile_report(df):
     _params = GlobalParams()
