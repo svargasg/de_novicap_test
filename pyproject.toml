@@ -49,7 +49,7 @@ testpaths = [
 ]
 
 [tool.sqlfluff.core]
-dialect = "redshift"
+dialect = "snowflake"
 templater = "jinja"
 sql_file_exts = ".sql,.sql.j2,.dml,.ddl"
 large_file_skip_byte_limit = 0
