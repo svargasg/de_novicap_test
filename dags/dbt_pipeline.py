@@ -49,7 +49,7 @@ def dbt_task_group() -> None:
             select=["stg_bank_loans"],
             load_method=LoadMode.CUSTOM,
             emit_datasets=False,
-            test_behavior=TestBehavior.AFTER_EACH,
+            test_behavior=TestBehavior.BUILD,
         ),
     )
 

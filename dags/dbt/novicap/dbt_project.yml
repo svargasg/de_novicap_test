@@ -38,9 +38,6 @@ vars:
 models:
   novicap:
     +materialized: table
-    raw:
-      +database: NOVICAP_DE
-      +schema: NOVICAP_RAW
     transform:
       +database: NOVICAP_DE
       +schema: NOVICAP_TRANSFORM
