@@ -1,7 +1,6 @@
 import os
 from datetime import datetime, timedelta
 
-from airflow.datasets import Dataset
 from airflow.decorators import dag
 from airflow.operators.dummy_operator import DummyOperator
 from cosmos import DbtTaskGroup, LoadMode, RenderConfig

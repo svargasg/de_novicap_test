@@ -1,10 +1,5 @@
-import json
-import logging
-import os
-
 from cosmos import ExecutionConfig, ProfileConfig, ProjectConfig
 from cosmos.profiles import SnowflakeUserPasswordProfileMapping
-
 from include.common.params import GlobalParams
 
 params = GlobalParams()
