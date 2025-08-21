@@ -37,14 +37,10 @@ vars:
 
 models:
   novicap:
-    +bind: false # Materialize all views as late-binding
     +materialized: table
-    +grants:
-      select: 'GROUP readonlyusers'
-    # The next line can replace the previous 2 lines
-    # post-hook: 'grant select on {{ this }} to group readonlyusers'
-    revenue:
-      +schema: revenue
-
-on-run-end:
-  - "{% for schema in schemas%}grant usage on schema {{ schema }} to group readonlyusers;{% endfor%}"
+    raw:
+      +database: NOVICAP_DE
+      +schema: NOVICAP_RAW
+    transform:
+      +database: NOVICAP_DE
+      +schema: NOVICAP_TRANSFORM

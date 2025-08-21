@@ -117,3 +117,5 @@ dags/dbt/*/.user.yml
 dags/dbt/*/models/testing
 env_dbt/
 .user.yml
+dags/dbt/novicap/profiles.yml
+dags/dbt/novicap/package-lock.yml
