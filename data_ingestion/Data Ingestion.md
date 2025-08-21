@@ -52,3 +52,13 @@ Scripts are attached in [sf_initialize_objects.sql](./sf_initialize_objects.sql)
 
 
 **All the previous deploy steps could be done via terraform but due to time limitations, they are out of scope for this test.**
+
+Author: @svargasg [Sebastian Vargas Gantiva]
+
+<div align="left">
+    <a href="../README.md"><< README </a>
+</div>
+
+<div align="right">
+    <a href="../data_ingestion/Data Ingestion.md">Data Ingestion >></a>
+</div>
