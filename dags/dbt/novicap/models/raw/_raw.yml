@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: RAW
+    database: NOVICAP_DE
+    schema: NOVICAP_RAW
+    loaded_at_field: LOADED_AT
+    freshness:
+      warn_after: { count: 12, period: hour }
+      error_after: { count: 24, period: hour }
+    tables:
+      - name: BANK_LOANS
+        description: Table containing the bank loans data
+        columns:
+          - name: LOAN_ID
+            data_tests:
+              - not_null

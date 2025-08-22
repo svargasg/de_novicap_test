@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_bank_loans
+    description: Transformed BANK_LOANS table
+    columns:
+      - name: LOAN_ID
+        data_tests:
+          - not_null
+      - name: CUSTOMER_ID
+        data_tests:
+          - not_null

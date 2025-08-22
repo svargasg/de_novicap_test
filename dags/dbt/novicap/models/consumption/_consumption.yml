@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: fact_bank_loans
+    description: Consumption BANK_LOANS table
+    columns:
+      # - name: LOAN_STATUS
+      #   data_tests:
+      #     - not_null
+      - name: CURRENT_LOAN_AMOUNT
+        data_tests:
+          - not_null
+      # - name: TERM
+      #   data_tests:
+      #     - not_null
+      - name: CREDIT_SCORE
+        data_tests:
+          - not_null
+      - name: ANUAL_INCOME
+        data_tests:
+          - not_null
+      # - name: YEARS_IN_CURRENT_JOB
+      #   data_tests:
+      #     - not_null
+      # - name: HOME_OWNERSHIP
+      #   data_tests:
+      #     - not_null
+      # - name: PURPOSE
+      #   data_tests:
+      #     - not_null
+      - name: MONTHLY_DEBT
+        data_tests:
+          - not_null
+      - name: YEARS_CREDIT_HISTORY
+        data_tests:
+          - not_null
+      - name: NUM_OPEN_ACCOUNTS
+        data_tests:
+          - not_null
+      - name: NUM_CREDIT_PROBLEMS
+        data_tests:
+          - not_null
+      - name: CURRENT_CREDIT_BALANCE
+        data_tests:
+          - not_null
+      - name: MAX_OPEN_CREDIT
+        data_tests:
+          - not_null
+      - name: BANKRUPTCIES
+        data_tests:
+          - not_null
+      - name: TAX_LIENS
+        data_tests:
+          - not_null
