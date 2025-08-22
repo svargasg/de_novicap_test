@@ -2,7 +2,7 @@
 
 In order to ingest data into the cloud based on the .csv data files, the following workflow was designed:
 
-![Data Ingestion Workflow](image-1.png)
+![Data Ingestion Workflow](image-10.png)
 
 ## Considerations
 
@@ -18,7 +18,7 @@ In order to ingest data into the cloud based on the .csv data files, the followi
 
 ## Implementation
 
-Scripts are attached in [sf_initialize_objects.sql](./sf_initialize_objects.sql)
+Scripts are attached in [sf_initialize_objects.sql](../data_ingestion/sf_initialize_objects.sql)
 
 1. Create database, raw schema and raw table structure based on the data profiling to identify the correct data types and also we add some metadata columns for audit purposes.
 
@@ -62,5 +62,5 @@ Author: @svargasg [Sebastian Vargas Gantiva]
 </div>
 
 <div align="right">
-    <a href="../data_ingestion/Data Ingestion.md">Data Ingestion >></a>
+    <a href="../docs/Data Transformation.md">Data Transformation >></a>
 </div>
