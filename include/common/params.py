@@ -16,4 +16,4 @@ class GlobalParams(object):
         self.DBT_DIR = "/usr/local/airflow/dags/dbt/"
         self.DBT_VENV = "/usr/local/airflow/dbt_venv/bin/dbt"
         self.DBT_PROJECT = "novicap"
-        self.SCH_DBT = "dbt"
+        self.SCH_DBT = "DBT"

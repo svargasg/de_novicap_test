@@ -45,7 +45,7 @@ def dbt_task_group() -> None:
         profile_config=sf_db,
         execution_config=dbt_execution_config,
         render_config=RenderConfig(
-            select=["stg_bank_loans"],
+            select=["+fact_bank_loans"],
             load_method=LoadMode.CUSTOM,
             emit_datasets=False,
             test_behavior=TestBehavior.BUILD,

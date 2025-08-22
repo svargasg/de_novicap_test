@@ -41,3 +41,6 @@ models:
     transform:
       +database: NOVICAP_DE
       +schema: NOVICAP_TRANSFORM
+    consumption:
+      +database: NOVICAP_DE
+      +schema: NOVICAP_CONSUMPTION
