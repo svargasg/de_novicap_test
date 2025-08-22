@@ -154,6 +154,7 @@ The resulting physical model is as follows
 
 * Note: If standardized data models (dimensional modeling or OBT) need to be generated, the necessary entities supported according to the use case (probably descriptive analytics and reporting) could be identified and generated in new dbt models.
 
+**Due to time limitations, incremental load strategy in transform/consumption is out of scope for this test.**
 **Due to time limitations, observability mechanisms (error notifications and alerts) are out of scope for this test.**
 
 Author: @svargasg [Sebastian Vargas Gantiva]
