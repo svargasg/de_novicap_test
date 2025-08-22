@@ -152,6 +152,8 @@ The resulting physical model is as follows
 
 ![alt text](image-15.png)
 
+5. This dataset could be exposed through an API in Snowflake or simply consumed through ODBC/JDBC connectors for use by external integrations.
+
 * Note: If standardized data models (dimensional modeling or OBT) need to be generated, the necessary entities supported according to the use case (probably descriptive analytics and reporting) could be identified and generated in new dbt models.
 
 **Due to time limitations, incremental load strategy in transform/consumption is out of scope for this test.**
